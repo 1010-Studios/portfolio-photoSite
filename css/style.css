@@ -1,7 +1,7 @@
 @import './navbar.css';
 @import './photo-carousel.css';
 @import './portfolio.css';
-@import './footer.css';
+@import './contact.css';
 @import './animations.css';
 
 :root {
@@ -28,6 +28,19 @@ body {
 	font-family: 'Livvic', sans-serif;
 	background: var(--midnight);
 	scroll-behavior: smooth;
+}
+
+footer {
+	position: relative;
+	bottom: 4rem;
+	text-align: center;
+	color: white;
+	height: 100px;
+}
+
+footer span {
+	font-size: 0.8rem;
+	margin: 1rem;
 }
 
 /*------------------------------------------
