@@ -67,14 +67,15 @@ header {
 }
 
 .nav-link:hover {
-	background-color: var(--white);
+	background: var(--sky);
 	border-bottom-left-radius: 100%;
 	border-bottom-right-radius: 100%;
 }
 
 .nav-link:hover a {
+	font-weight: bold;
+	font-size: 1.1rem;
 	color: var(--midnight);
-	/* color: var(--white); */
 }
 
 .nav-brand a {
