@@ -10,25 +10,19 @@ photo Carousel
 	display: flex;
 	align-items: center;
 	width: 90%;
-	height: 50%;
 }
 .photo {
-	/* background: url('/assets//Abract01.png'); */
 	background-repeat: no-repeat;
 	background-position: right;
 	align-items: center;
-	min-height: 80vh;
 	width: 100vw;
 }
 
 .carousel {
-	/* margin: 10rem 2rem 0 2rem; */
 	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 100%;
-	max-height: 50vw;
 }
 
 /*------------------------------------------
@@ -44,14 +38,17 @@ Buttons
 	/* width: 3rem; */
 	outline: none;
 	padding: 1rem;
-	border-radius: 50%;
-	background: var(--sky);
+	border-radius: 15px;
+	/* background: var(--sky); */
+	border-top: 2px solid lightblue;
+	border-bottom: 2px solid lightblue;
+	background: none;
 	z-index: 400;
-	color: var(--midnight);
+	color: lightblue;
 	font-size: 1.8rem;
 	margin: 0 2rem;
 	cursor: pointer;
-	box-shadow: 0px 0px 10px var(--white);
+	/* box-shadow: 0px 0px 10px var(--white); */
 }
 
 #prev:hover,
@@ -62,9 +59,13 @@ Buttons
 
 #prev {
 	left: -2rem;
+	border-left: 2px solid lightblue;
+	border-right: 15px solid transparent;
 }
 #next {
 	right: -2rem;
+	border-right: 2px solid lightblue;
+	border-left: 15px solid transparent;
 }
 
 .btn-carousel span {

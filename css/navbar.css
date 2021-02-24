@@ -66,15 +66,13 @@ header {
 	outline: none;
 }
 
-.nav-link:hover {
-	background: var(--sky);
-	border-bottom-left-radius: 100%;
-	border-bottom-right-radius: 100%;
+.nav-link a {
+	padding: 1rem;
 }
 
 .nav-link:hover a {
+	background: var(--sky);
 	font-weight: bold;
-	font-size: 1.1rem;
 	color: var(--midnight);
 }
 

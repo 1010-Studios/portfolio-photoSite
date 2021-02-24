@@ -134,11 +134,11 @@ Mobile View -- <= 750px Width
 		flex-direction: column;
 	}
 
-	header {
-		background-color: var(--midnight);
-	}
-
 	/*****NAV*****/
+	.nav {
+		background-color: var(--midnight);
+		min-height: 100%;
+	}
 	.nav .nav-menu,
 	.nav .nav-items {
 		flex-direction: column;
@@ -162,12 +162,16 @@ Mobile View -- <= 750px Width
 		top: 1rem;
 		right: 3rem;
 		color: var(--white) !important;
+		background: var(--midnight);
+		padding: 1rem;
+		border-radius: 50%;
 	}
 
 	.collapse {
 		position: relative;
-		height: 30rem;
+		height: 35rem;
 		border-bottom: 4px solid lightblue;
+		/* border-radius: 0 0 0 50%; */
 		background: var(--midnight);
 	}
 
@@ -184,15 +188,17 @@ Mobile View -- <= 750px Width
 
 	.carousel {
 		width: 90vw;
+		min-height: 100vh;
 	}
 
 	.photo-content {
+		min-height: 100vh;
 		width: 100%;
 	}
 
 	#next,
 	#prev {
-		top: 120%;
+		top: 35%;
 		scale: 80%;
 	}
 	#prev {
