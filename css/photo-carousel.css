@@ -4,13 +4,13 @@ photo Carousel
 
 .section--carousel {
 	position: relative;
-	min-height: 80vh;
+	min-height: 60vh;
 	margin: auto;
 	padding: 5rem 0;
 	display: flex;
 	align-items: center;
 	width: 90%;
-	height: 100%;
+	height: 50%;
 }
 .photo {
 	/* background: url('/assets//Abract01.png'); */
