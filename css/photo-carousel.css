@@ -1,12 +1,17 @@
 /*------------------------------------------
 photo Carousel
 ------------------------------------------*/
+
+.section--carousel {
+	min-height: 80vh;
+	display: flex;
+}
 .photo {
 	background: url('/assets//Abract01.png');
 	background-repeat: no-repeat;
 	background-position: right;
 	align-items: center;
-	min-height: 80vh;
+	/* min-height: 80vh; */
 	width: 100vw;
 }
 

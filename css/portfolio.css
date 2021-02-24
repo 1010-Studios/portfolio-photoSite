@@ -1,3 +1,14 @@
+.section--portfolio {
+	position: relative;
+	padding: 2rem 0;
+	background: white;
+	min-height: 85vh;
+}
+
+/* .section--portfolio::before {
+	border-radius: 50% 100%;
+} */
+
 .portfolio-container {
 	margin: 2rem;
 	display: grid;
@@ -16,8 +27,54 @@
 	border-radius: 15px;
 	transform: scale(90%);
 	transition: all 0.4s ease;
+	z-index: 100;
 }
 
 .portfolio-img img:hover {
 	transform: scale(100%);
+}
+
+/************************
+ShaveDividers - from shapedivide.app
+************************/
+
+.custom-shape-divider-top-1614193202 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+}
+
+.custom-shape-divider-top-1614193202 svg {
+	position: relative;
+	display: block;
+	width: calc(129% + 1.3px);
+	height: 204px;
+}
+
+.custom-shape-divider-top-1614193202 .shape-fill {
+	fill: var(--midnight);
+}
+
+.custom-shape-divider-bottom-1614194948 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1614194948 svg {
+	position: relative;
+	display: block;
+	width: calc(129% + 1.3px);
+	height: 204px;
+}
+
+.custom-shape-divider-bottom-1614194948 .shape-fill {
+	fill: var(--midnight);
 }

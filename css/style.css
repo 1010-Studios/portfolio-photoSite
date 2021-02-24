@@ -1,6 +1,7 @@
 @import './navbar.css';
 @import './photo-carousel.css';
 @import './portfolio.css';
+@import './footer.css';
 
 :root {
 	/*Fonts*/
@@ -25,6 +26,7 @@ body {
 	overflow-x: hidden;
 	font-family: 'Livvic', sans-serif;
 	background: var(--midnight);
+	scroll-behavior: smooth;
 }
 
 /*------------------------------------------
@@ -127,13 +129,21 @@ Mobile View -- <= 750px Width
 		border-radius: 0;
 	}
 
+	.collapse a {
+		color: wheat !important;
+	}
+
 	.nav .toggle-collapse {
 		display: initial;
 	}
 
 	.collapse {
+		position: relative;
 		height: 30rem;
+		width: 15rem;
+		background: var(--midnight);
 	}
+
 	.photo-title {
 		font-size: 1.1rem;
 	}
