@@ -192,9 +192,8 @@ Mobile View -- <= 750px Width
 
 	#next,
 	#prev {
-		height: 30%;
 		top: 120%;
-		scale: 120%;
+		scale: 80%;
 	}
 	#prev {
 		left: 20%;
