@@ -1,8 +1,8 @@
-# Photography Portfolio template Site
+# Photography Portfolio Template Site
 
 ## Live Preview:
 
-- (url) https://ty-portfolio-photosite.netlify.app/#
+- https://ty-portfolio-photosite.netlify.app/#
 
 Tech Stack:
 
