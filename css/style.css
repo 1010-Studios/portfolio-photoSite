@@ -149,7 +149,7 @@ Mobile View -- <= 750px Width
 	}
 
 	.collapse {
-		color: wheat !important;
+		color: var(--white) !important;
 	}
 
 	.nav .toggle-collapse {
@@ -161,16 +161,14 @@ Mobile View -- <= 750px Width
 		position: absolute;
 		top: 1rem;
 		right: 3rem;
-		color: wheat !important;
+		color: var(--white) !important;
 	}
 
 	.collapse {
 		position: relative;
 		height: 30rem;
 		border-bottom: 4px solid lightblue;
-		/* width: 15rem; */
 		background: var(--midnight);
-		/* z-index: 400; */
 	}
 
 	/*****Carousel*****/
