@@ -31,7 +31,7 @@ body {
 }
 
 footer {
-	position: relative;
+	/* position: relative; */
 	bottom: 4rem;
 	text-align: center;
 	color: white;
