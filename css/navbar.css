@@ -1,0 +1,83 @@
+/*------------------------------------------
+Navbar
+------------------------------------------*/
+
+.nav {
+	/* background: var(--midnight); */
+	/* position: absolute; */
+	width: 100%;
+	top: 0px;
+	padding: 0 2rem;
+	height: 0rem;
+	min-height: 8vh;
+	overflow: hidden;
+	transition: height 0.5s ease-in-out;
+}
+
+.nav-menu {
+	justify-content: space-around;
+}
+
+.toggle-collapse {
+	position: absolute;
+	top: 0;
+	width: 90%;
+	cursor: pointer;
+	display: none;
+}
+
+.toggle-collapse .toggle-icons {
+	display: flex;
+	justify-content: flex-end;
+	padding: 1.7rem 0;
+}
+
+.toggle-collapse .toggle-icons i {
+	font-size: 1.4rem;
+	color: var(--text-gray);
+}
+
+.nav-items {
+	display: flex;
+	margin: 0;
+}
+
+.nav-link {
+	padding: 1.6rem 1rem;
+	font-size: 1.1rem;
+	position: relative;
+	position: relative;
+	font-family: var(--abel);
+	transition: all 0.2s ease-in;
+	border: none;
+	outline: none;
+}
+
+.nav-link:hover {
+	background-color: var(--midnight);
+	border-bottom-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+}
+
+.nav-link:hover a {
+	color: var(--white);
+}
+
+.nav-brand a {
+	font-size: 1.6rem;
+	padding: 1rem 0;
+	display: block;
+	font-family: var(--livvic);
+}
+
+.social {
+	padding: 1.4rem 0;
+}
+
+.social i {
+	padding: 0 0.2rem;
+}
+
+.social i:hover {
+	color: #a1c4cf;
+}

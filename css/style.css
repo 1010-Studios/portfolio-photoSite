@@ -1,0 +1,169 @@
+@import './navbar.css';
+@import './photo-carousel.css';
+@import './portfolio.css';
+
+:root {
+	/*Fonts*/
+	--abel: 'Abel', sans-serif;
+	--livvic: 'Livvic', sans-serif;
+
+	/*Theme Colours*/
+	--text-gray: #3f4954;
+	--text-light: #686666da;
+	--bg-color: #0f0f0f;
+	--white: #f8f8f8;
+	--midnight: #101f25;
+
+	/*Gradients*/
+	--sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+html,
+body {
+	margin: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	font-family: 'Livvic', sans-serif;
+	background: var(--midnight);
+}
+
+/*------------------------------------------
+Global Classes
+------------------------------------------*/
+a {
+	text-decoration: none;
+	color: var(--text-light);
+	color: var(--white);
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+h1 {
+	font-family: var(--livvic);
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-family: var(--abel);
+}
+
+h3 {
+	font-family: var(--abel);
+}
+
+button.btn {
+	border: none;
+	border-radius: 2rem;
+	padding: 1rem 3rem;
+	font-size: 1rem;
+	font-family: var(--livvic);
+	cursor: pointer;
+}
+
+/*------------------------------------------
+Site Title
+------------------------------------------*/
+
+main {
+	/* display: flex;
+	flex-direction: column;
+	justify-content: space-between; */
+	overflow-y: hidden;
+}
+
+main .site-title {
+	background: url('../assets/Background-image.png');
+	background-size: cover;
+	height: 110vh;
+	display: flex;
+	justify-content: center;
+}
+
+main .site-title .site-background {
+	padding-top: 10rem;
+	text-align: center;
+	color: var(--white);
+}
+
+main .site-title h1,
+h3 {
+	margin: 0.3rem;
+}
+
+main .site-title .btn {
+	margin: 1.8rem;
+	background: var(--sky);
+}
+
+main .site-title .btn:hover {
+	color: var(--white);
+	background: transparent;
+	border: 1px solid white;
+}
+
+/*------------------------------------------
+Mobile View -- <= 750px Width
+------------------------------------------*/
+
+@media only screen and (max-width: 750px) {
+	main {
+		display: flex;
+		flex-direction: column;
+	}
+	.nav .nav-menu,
+	.nav .nav-items {
+		flex-direction: column;
+	}
+
+	.nav .nav-items .nav-link:hover {
+		border-radius: 0;
+	}
+
+	.nav .toggle-collapse {
+		display: initial;
+	}
+
+	.collapse {
+		height: 30rem;
+	}
+	.photo-title {
+		font-size: 1.1rem;
+	}
+
+	.carousel {
+		margin: 10rem 1rem;
+		width: 90vw;
+	}
+
+	.photo-content {
+		width: 100%;
+	}
+
+	.btn-photo {
+		scale: 80%;
+	}
+
+	.section--portfolio {
+		margin-top: -20rem;
+		overflow: hidden;
+	}
+
+	.portfolio-container {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	.portfolio-img {
+		width: 30%;
+		margin: 0.3rem;
+	}
+}
