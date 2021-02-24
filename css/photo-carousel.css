@@ -39,17 +39,24 @@ Buttons
 #next {
 	position: absolute;
 	top: 50%;
-	height: 50%;
+	/* height: 50%; */
+	border: none;
 	transform: translateY(-50%);
 	width: 3rem;
 	outline: none;
-	border-radius: 15px;
+	border-radius: 50%;
 	background: var(--sky);
 	z-index: 400;
 	color: var(--midnight);
 	font-size: 1.8rem;
 	margin: 0 2rem;
 	cursor: pointer;
+}
+
+#prev:hover,
+#next:hover {
+	opacity: 0.7;
+	color: var(--white);
 }
 
 #prev {
