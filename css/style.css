@@ -2,6 +2,7 @@
 @import './photo-carousel.css';
 @import './portfolio.css';
 @import './footer.css';
+@import './animations.css';
 
 :root {
 	/*Fonts*/
@@ -120,6 +121,12 @@ Mobile View -- <= 750px Width
 		display: flex;
 		flex-direction: column;
 	}
+
+	header {
+		background-color: var(--midnight);
+	}
+
+	/*****NAV*****/
 	.nav .nav-menu,
 	.nav .nav-items {
 		flex-direction: column;
@@ -129,19 +136,27 @@ Mobile View -- <= 750px Width
 		border-radius: 0;
 	}
 
-	.collapse a {
+	.collapse {
 		color: wheat !important;
 	}
 
 	.nav .toggle-collapse {
-		display: initial;
+		display: block;
 	}
 
 	.collapse {
 		position: relative;
 		height: 30rem;
-		width: 15rem;
+		/* width: 15rem; */
 		background: var(--midnight);
+		/* z-index: 400; */
+	}
+
+	/*****Carousel*****/
+
+	.section-carousel {
+		margin: 0;
+		display: block;
 	}
 
 	.photo-title {
@@ -149,7 +164,6 @@ Mobile View -- <= 750px Width
 	}
 
 	.carousel {
-		margin: 10rem 1rem;
 		width: 90vw;
 	}
 
@@ -157,13 +171,29 @@ Mobile View -- <= 750px Width
 		width: 100%;
 	}
 
+	#next,
+	#prev {
+		height: 30%;
+		top: 120%;
+		scale: 120%;
+	}
+	#prev {
+		left: 20%;
+	}
+
+	#next {
+		right: 20%;
+	}
+
 	.btn-photo {
 		scale: 80%;
 	}
 
+	/*****Photo Grid*****/
+
 	.section--portfolio {
 		margin-top: -20rem;
-		overflow: hidden;
+		/* overflow: hidden; */
 	}
 
 	.portfolio-container {

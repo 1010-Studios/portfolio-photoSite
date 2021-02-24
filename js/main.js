@@ -40,7 +40,7 @@ slideShow = () => {
 	showSlide(slideIndex);
 };
 
-setInterval(slideShow, 4000);
+const slideShowTimer = setInterval(slideShow, 4000);
 
 const _carouselBtns = document.querySelectorAll('.btn-carousel');
 _carouselBtns.forEach((item) => {

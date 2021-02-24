@@ -2,6 +2,14 @@
 Navbar
 ------------------------------------------*/
 
+header {
+	background: rgba(25, 25, 25, 0.7);
+	z-index: 999;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
 .nav {
 	/* background: var(--midnight); */
 	/* position: fixed; */
@@ -32,14 +40,19 @@ Navbar
 	padding: 1.7rem 0;
 }
 
-.toggle-collapse .toggle-icons i {
+.toggle-icons i {
 	font-size: 1.4rem;
-	color: var(--text-gray);
+	color: var(--white);
 }
 
 .nav-items {
 	display: flex;
+	top: 0;
 	margin: 0;
+}
+
+.nav-items-fixed {
+	position: fixed;
 }
 
 .nav-link {
@@ -54,13 +67,14 @@ Navbar
 }
 
 .nav-link:hover {
-	background-color: var(--midnight);
-	border-bottom-left-radius: 50%;
-	border-bottom-right-radius: 50%;
+	background-color: var(--white);
+	border-bottom-left-radius: 100%;
+	border-bottom-right-radius: 100%;
 }
 
 .nav-link:hover a {
-	color: var(--white);
+	color: var(--midnight);
+	/* color: var(--white); */
 }
 
 .nav-brand a {

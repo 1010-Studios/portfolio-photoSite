@@ -3,20 +3,26 @@ photo Carousel
 ------------------------------------------*/
 
 .section--carousel {
+	position: relative;
 	min-height: 80vh;
+	margin: auto;
+	padding: 5rem 0;
 	display: flex;
+	align-items: center;
+	width: 90%;
+	height: 100%;
 }
 .photo {
-	background: url('/assets//Abract01.png');
+	/* background: url('/assets//Abract01.png'); */
 	background-repeat: no-repeat;
 	background-position: right;
 	align-items: center;
-	/* min-height: 80vh; */
+	min-height: 80vh;
 	width: 100vw;
 }
 
 .carousel {
-	margin: 10rem 2rem 0 2rem;
+	/* margin: 10rem 2rem 0 2rem; */
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -33,15 +39,14 @@ Buttons
 #next {
 	position: absolute;
 	top: 50%;
-	height: 30%;
+	height: 50%;
 	transform: translateY(-50%);
 	width: 3rem;
-	border: 4px solid var(--text-gray);
 	outline: none;
 	border-radius: 15px;
-	background: rgba(0, 0, 0, 0.6);
+	background: var(--sky);
 	z-index: 400;
-	color: var(--white);
+	color: var(--midnight);
 	font-size: 1.8rem;
 	margin: 0 2rem;
 	cursor: pointer;
@@ -82,6 +87,9 @@ Content
 
 .photo-focus {
 	display: block;
+	animation-name: fade;
+	animation-duration: 2s;
+	animation-direction: alternate;
 }
 
 .photo-title {
@@ -101,6 +109,8 @@ Content
 	font-size: 2.5rem;
 	font-weight: 200;
 	text-shadow: #0f0f0f 3px 3px;
+	animation-name: grow;
+	animation-duration: 1.2s;
 }
 
 .btn-photo {
@@ -108,56 +118,4 @@ Content
 	background: var(--sky);
 	margin: 0.5rem;
 	transition: all 3s ease;
-}
-
-/*------------------------------------------
-Animations
-------------------------------------------*/
-.fade {
-	-webkit-animation-name: fade;
-	-webkit-animation-duration: 1.5s;
-	animation-name: fade;
-	animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-	from {
-		opacity: 0.4;
-	}
-	to {
-		opacity: 1;
-	}
-}
-
-@keyframes fade {
-	from {
-		opacity: 0.4;
-	}
-	to {
-		opacity: 1;
-	}
-}
-
-.fadeOut {
-	-webkit-animation-name: fadeout;
-	-webkit-animation-duration: 1.5s;
-	animation-name: fadeout;
-	animation-duration: 1.5s;
-}
-
-@keyframes fadeout {
-	from {
-		opacity: 1;
-	}
-	to {
-		opacity: 0.4;
-	}
-}
-@-webkit-keyframes fadeout {
-	from {
-		opacity: 1;
-	}
-	to {
-		opacity: 0.4;
-	}
 }

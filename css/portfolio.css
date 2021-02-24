@@ -2,7 +2,8 @@
 	position: relative;
 	padding: 2rem 0;
 	background: white;
-	min-height: 85vh;
+	min-height: 100vh;
+	margin: 5rem 0;
 }
 
 /* .section--portfolio::before {
@@ -12,7 +13,7 @@
 .portfolio-container {
 	margin: 2rem;
 	display: grid;
-	min-height: 80vh;
+	min-height: 90vh;
 	width: 80%;
 	margin: 0 auto;
 	align-content: center;
@@ -27,7 +28,6 @@
 	border-radius: 15px;
 	transform: scale(90%);
 	transition: all 0.4s ease;
-	z-index: 100;
 }
 
 .portfolio-img img:hover {
@@ -49,7 +49,7 @@ ShaveDividers - from shapedivide.app
 
 .custom-shape-divider-top-1614193202 svg {
 	position: relative;
-	display: block;
+	display: inline-block;
 	width: calc(129% + 1.3px);
 	height: 204px;
 }
