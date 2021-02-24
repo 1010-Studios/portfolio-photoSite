@@ -24,6 +24,11 @@
 	height: 40px;
 	border-radius: 15px;
 	font-size: 1rem;
+	background: var(--sky);
+}
+
+.form-field:focus {
+	outline: none;
 }
 
 #message {

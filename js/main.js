@@ -1,10 +1,17 @@
-// window.addEventListener('load', () => {
 //Navbar Handling
 const _nav = document.querySelector('.nav');
 const _toggleCollapse = document.querySelector('.toggle-collapse');
 
 _toggleCollapse.addEventListener('click', () => {
 	_nav.classList.toggle('collapse');
+});
+
+const _navBtns = document.querySelectorAll('.nav-link');
+
+_navBtns.forEach((link) => {
+	link.addEventListener('click', function () {
+		_nav.classList.remove('collapse');
+	});
 });
 
 //photo Carousel
@@ -46,4 +53,3 @@ const _carouselBtns = document.querySelectorAll('.btn-carousel');
 _carouselBtns.forEach((item) => {
 	item.addEventListener('click', moveSlide);
 });
-// });
