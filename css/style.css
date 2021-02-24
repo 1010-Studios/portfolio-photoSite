@@ -31,7 +31,6 @@ body {
 }
 
 footer {
-	/* position: relative; */
 	bottom: 4rem;
 	text-align: center;
 	color: white;
@@ -155,11 +154,20 @@ Mobile View -- <= 750px Width
 
 	.nav .toggle-collapse {
 		display: block;
+		width: 100vw;
+	}
+
+	.toggle-icons i {
+		position: absolute;
+		top: 1rem;
+		right: 3rem;
+		color: wheat !important;
 	}
 
 	.collapse {
 		position: relative;
 		height: 30rem;
+		border-bottom: 4px solid lightblue;
 		/* width: 15rem; */
 		background: var(--midnight);
 		/* z-index: 400; */
