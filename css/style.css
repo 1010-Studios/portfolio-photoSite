@@ -135,6 +135,10 @@ Mobile View -- <= 750px Width
 	}
 
 	/*****NAV*****/
+
+	header {
+		min-height: 0;
+	}
 	.nav {
 		background-color: var(--midnight);
 		min-height: 100%;
@@ -200,6 +204,7 @@ Mobile View -- <= 750px Width
 	#prev {
 		top: 35%;
 		scale: 80%;
+		margin: 0 -0.5rem;
 	}
 	#prev {
 		left: 20%;
